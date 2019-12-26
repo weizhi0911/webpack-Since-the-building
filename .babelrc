@@ -1,0 +1,5 @@
+{
+    "plugins": ["@babel/plugin-syntax-dynamic-import"]
+    //目前还没有启用对实验性语法“dynamicImport”的支持
+    //该文件用来支持动态使用import语法
+}

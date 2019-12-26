@@ -1,0 +1,44 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "@vue/composition-api": "^0.3.4",
+    "cross-env": "^6.0.3",
+    "html-webpack-plugin": "^3.2.0",
+    "moment": "^2.24.0",
+    "save-dev": "0.0.1-security",
+    "vant": "^2.2.16",
+    "vue": "^2.6.11",
+    "vue-loader": "^15.8.3",
+    "vue-router": "^3.1.3",
+    "vue-template-compiler": "^2.6.11",
+    "vuex": "^3.1.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-dynamic-import-webpack": "^1.1.0",
+    "babel-polyfill": "^6.26.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "happypack": "^5.0.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.js",
+    "dll": "webpack -p --progress --config ./webpack.dll.config.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
